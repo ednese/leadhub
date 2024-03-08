@@ -20,11 +20,11 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Everything Starts as a Square - Get lost in the world of icon design
+          Leadhub - Boostez votre agence immobilière
         </title>
         <meta
           name="description"
-          content="A book and video course that teaches you how to design your own icons from scratch. "
+          content="Obtenez de 5 à 10 prospects en moins de 48 heures dans votre zone géographique grace à des estimations personnalisées en ligne."
         />
       </Head>
       <Hero />
