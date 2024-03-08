@@ -102,7 +102,7 @@ export function Pricing() {
           Nos offres
         </SectionHeading>
         <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-          Boostez vos prospects immobiliers aujourd'hui!
+          Boostez vos prospects immobiliers dès maintenant!
         </p>
         <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
           Demandez une démonstration ou une consultation gratuite pour augmenter votre nombre de prospects immobiliers.

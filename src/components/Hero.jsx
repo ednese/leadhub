@@ -6,6 +6,7 @@ import { StarRating } from '@/components/StarRating'
 import coverImage from '@/images/herocover.jpg'
 
 function Testimonial() {
+  const text = `Cette agence a su exploiter pleinement le potentiel de notre entreprise. J'aurais souhaité les découvrir bien plus tôt.`
   return (
     <figure className="relative mx-auto max-w-md text-center lg:mx-0 lg:text-left">
       <div className="flex justify-center text-blue-600 lg:justify-start">
@@ -13,7 +14,7 @@ function Testimonial() {
       </div>
       <blockquote className="mt-2">
         <p className="font-display text-xl font-medium text-slate-900">
-          “Cette agence a su exploiter pleinement le potentiel de notre entreprise. J'aurais souhaité les découvrir bien plus tôt.”
+          “{text}”
         </p>
       </blockquote>
       <figcaption className="mt-2 text-sm text-slate-500">

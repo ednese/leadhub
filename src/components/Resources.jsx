@@ -58,6 +58,10 @@ const resources = [
 ]
 
 export function Resources() {
+  const text = `Nous offrons des services de conception et d'intégration de sites web sur mesure pour les agences immobilières.
+  Notre équipe d'experts travaille en étroite collaboration avec nos clients pour créer des sites web attrayants
+  et fonctionnels qui répondent à leurs besoins spécifiques.`
+
   return (
     <section
       id="resources"
@@ -72,9 +76,7 @@ export function Resources() {
           Conception et intégration de sites web personnalisés
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Nous offrons des services de conception et d'intégration de sites web sur mesure pour les agences immobilières.
-          Notre équipe d'experts travaille en étroite collaboration avec nos clients pour créer des sites web attrayants
-          et fonctionnels qui répondent à leurs besoins spécifiques.
+          {text}
         </p>
       </Container>
       <Container size="lg" className="mt-16">

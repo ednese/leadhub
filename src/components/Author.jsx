@@ -14,6 +14,14 @@ function TwitterIcon(props) {
 }
 
 export function Author() {
+  const text = `Fort de plus de 5 ans d'expérience en développement web,
+  j'ai évolué au sein d'entreprises confrontées à des défis majeurs tels que le SEO et l'optimisation de la conversion,
+  notamment sur des plateformes telles que le site e-commerce Back Market.
+  Ma curiosité m'a poussé à me plonger activement dans les enjeux immobiliers pendant une année de crise,
+  et mes échanges approfondis avec des agents immobiliers m'ont révélé un besoin criant non satisfait pendant cette période tumultueuse.
+  C'est ainsi que j'ai fondé une agence spécialisée dans la création de sites web immobiliers sur mesure,
+  mettant l'accent sur l'optimisation de la conversion. Mon expertise vise à offrir des solutions adaptées,
+  reflétant l'identité de chaque agence et répondant aux exigences spécifiques du secteur immobilier.`
   return (
     <section
       id="author"
@@ -40,14 +48,7 @@ export function Author() {
             <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
               <span className="block text-blue-600">Evan Sende</span></p>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
-              Fort de plus de 5 ans d'expérience en développement web,
-              j'ai évolué au sein d'entreprises confrontées à des défis majeurs tels que le SEO et l'optimisation de la conversion,
-              notamment sur des plateformes telles que le site e-commerce Back Market.
-              Ma curiosité m'a poussé à me plonger activement dans les enjeux immobiliers pendant une année de crise,
-              et mes échanges approfondis avec des agents immobiliers m'ont révélé un besoin criant non satisfait pendant cette période tumultueuse.
-              C'est ainsi que j'ai fondé une agence spécialisée dans la création de sites web immobiliers sur mesure,
-              mettant l'accent sur l'optimisation de la conversion. Mon expertise vise à offrir des solutions adaptées,
-              reflétant l'identité de chaque agence et répondant aux exigences spécifiques du secteur immobilier.
+              {text}
             </p>
             <p className="mt-8">
               <Link
