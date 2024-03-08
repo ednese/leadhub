@@ -21,7 +21,7 @@ function Testimonial() {
         <strong className="font-semibold text-blue-600 before:content-['—_']">
           Alexandre Gerez
         </strong>
-        , Front end at Sans Apport
+        , Développeur chez sansapport.com
       </figcaption>
     </figure>
   )
