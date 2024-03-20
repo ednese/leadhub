@@ -93,7 +93,7 @@ function Plan({ name, description, price, features, href, featured }) {
 export function Pricing() {
   return (
     <section
-      id="pricing"
+      id="contact"
       aria-labelledby="pricing-title"
       className="scroll-mt-14 pt-16 pb-8 sm:scroll-mt-32 sm:pt-20 sm:pb-10 lg:pt-32 lg:pb-16"
     >
@@ -114,7 +114,7 @@ export function Pricing() {
             name="Identité"
             description="Parfait pour les agences qui ont déjà du traffic."
             price={15}
-            href="#"
+            href="https://app.lemcal.com/@evan-sende/leadhub-identity?back=1"
             features={[
               'Site vitrine optimisé',
               'Formulaire utilisateurs',
@@ -126,7 +126,7 @@ export function Pricing() {
             name="Intégrale"
             description="Toute notre expertise pour vous obtenir des leads acheteurs."
             price={229}
-            href="#"
+            href="https://app.lemcal.com/@evan-sende/leadhub-integral?back=1"
             features={[
               'Formule "identité"',
               'Campagnes publicitaires',

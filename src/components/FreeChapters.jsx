@@ -5,7 +5,7 @@ import { Pattern } from '@/components/Pattern'
 export function FreeChapters() {
   return (
     <section
-      id="free-chapters"
+      id="email"
       aria-label="Free preview"
       className="scroll-mt-14 bg-blue-600 sm:scroll-mt-32"
     >

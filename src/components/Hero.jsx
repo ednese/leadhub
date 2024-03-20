@@ -21,7 +21,7 @@ function Testimonial() {
         <strong className="font-semibold text-blue-600 before:content-['—_']">
           Alexandre Gerez
         </strong>
-        , Développeur chez sansapport.com
+        , Développeur chez sans-apport.com
       </figcaption>
     </figure>
   )
@@ -56,10 +56,10 @@ export function Hero() {
               Obtenez de 5 à 10 prospects en moins de 48 heures dans votre zone géographique grace à des estimations personnalisées en ligne.
             </p>
             <div className="mt-8 flex gap-4">
-              <Button href="#free-chapters" color="blue">
+              <Button href="#email" color="blue">
                 Découvrir
               </Button>
-              <Button href="#pricing" variant="outline" color="blue">
+              <Button href="#contact" variant="outline" color="blue">
                 Contactez-nous
               </Button>
             </div>
