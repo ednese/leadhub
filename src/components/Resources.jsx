@@ -3,9 +3,11 @@ import Image from 'next/future/image'
 import { Container } from '@/components/Container'
 import { SectionHeading } from '@/components/SectionHeading'
 import abstractBackgroundImage from '@/images/resources/abstract-background.png'
-import discordImage from '@/images/resources/seo.svg'
-import figmaImage from '@/images/resources/ad.svg'
+import abstractBackgroundBlueImage from '@/images/resources/aabstract-background_blue.jpg'
+import abstractBackgroundPinkImage from '@/images/resources/aabstract-background_pink.jpg'
 import videoPlayerImage from '@/images/resources/video-player.svg'
+import seoPlayerImage from '@/images/resources/seo-player.svg'
+import adPlayerImage from '@/images/resources/ad-player.svg'
 
 const resources = [
   {
@@ -37,8 +39,19 @@ const resources = [
       "Nous optimisons les sites web pour les moteurs de recherche afin d'améliorer leur visibilité en ligne et d'attirer plus de trafic qualifié.",
     image: function DiscordImage() {
       return (
-        <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
-          <Image src={discordImage} className="h-full w-1/2" alt="" unoptimized />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <Image
+            className="absolute inset-0 h-full w-full object-cover"
+            src={abstractBackgroundBlueImage}
+            alt=""
+            sizes="(min-width: 1280px) 21rem, (min-width: 1024px) 33vw, (min-width: 768px) 19rem, (min-width: 640px) 50vw, 100vw"
+          />
+          <Image
+            className="relative w-36"
+            src={seoPlayerImage}
+            alt=""
+            unoptimized
+          />
         </div>
       )
     },
@@ -49,8 +62,19 @@ const resources = [
       'Nous concevons et exécutons des campagnes publicitaires, ciblant stratégiquement dans votre zone géographique des leads qualifiés.',
     image: function FigmaImage() {
       return (
-        <div className="absolute inset-0 flex items-center justify-center bg-green-600">
-          <Image src={figmaImage} className="h-full w-1/2" alt="" unoptimized />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <Image
+            className="absolute inset-0 h-full w-full object-cover"
+            src={abstractBackgroundPinkImage}
+            alt=""
+            sizes="(min-width: 1280px) 21rem, (min-width: 1024px) 33vw, (min-width: 768px) 19rem, (min-width: 640px) 50vw, 100vw"
+          />
+          <Image
+            className="relative w-36"
+            src={adPlayerImage}
+            alt=""
+            unoptimized
+          />
         </div>
       )
     },

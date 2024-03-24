@@ -99,7 +99,7 @@ export function Pricing() {
     >
       <Container>
         <SectionHeading number="4" id="pricing-title">
-          Nos offres
+          Nous contacter
         </SectionHeading>
         <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
           Boostez vos prospects immobiliers dès maintenant!

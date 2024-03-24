@@ -1,8 +1,42 @@
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Pattern } from '@/components/Pattern'
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import { db } from "../../firebase.js";
 
 export function FreeChapters() {
+  async function insertEmail(email) {
+    try {
+      // const id = collection("emails").doc().id
+      const docRef = await addDoc(collection(db, "emails"), {
+        // id,
+        email
+      });
+      alert("Votre email à été enregistré avec succès !")
+      // console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
+  }
+  async function isEmailExist(email) {
+    const querySnapshot = await getDocs(collection(db, "emails"));
+    let exist = false
+    querySnapshot.forEach((doc) => {
+      if (doc.data().email === email) exist = true
+    });
+    return exist;
+  }
+  async function onSubmit(event) {
+    event.preventDefault()
+    const email = event.target[0].value
+    const emailExist = await isEmailExist(email)
+    if (emailExist) {
+      alert("Cet email à déjà été enregistré !")
+      console.error("This email is already registered");
+    } else {
+      await insertEmail(email)
+    }
+  }
   return (
     <section
       id="email"
@@ -23,7 +57,7 @@ export function FreeChapters() {
               Inscrivez-vous à notre newsletter pour recevoir des conseils précieux sur la génération de leads et rester à jour avec les dernières actualités de notre agence.
             </p>
           </div>
-          <form className="lg:pl-16">
+          <form className="lg:pl-16" onSubmit={onSubmit}>
             <h3 className="text-base font-medium tracking-tight text-white">
               Recevez votre audit gratuit dans votre boite mail{' '}
               <span aria-hidden="true">&rarr;</span>
@@ -45,7 +79,7 @@ export function FreeChapters() {
                 color="white"
                 className="mt-4 w-full sm:relative sm:z-10 sm:mt-0 sm:w-auto sm:flex-none"
               >
-                Recevoir mon audit gratuit
+                Envoyer
               </Button>
             </div>
           </form>
